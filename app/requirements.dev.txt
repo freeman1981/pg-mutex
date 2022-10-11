@@ -1,0 +1,6 @@
+psycopg2-binary
+
+pytest
+pytest-env
+pytest-cov
+flake8-isort
