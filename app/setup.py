@@ -10,4 +10,5 @@ setuptools.setup(
     py_modules=['mutex'],
     install_requires=['psycopg2-binary'],
     python_requires='>=3.7',
+    url="https://github.com/freeman1981/pg-mutex",
 )
