@@ -24,7 +24,7 @@ def mutex(pg_connection: connection, keys: list, wait: bool = True):
 
 
 def generate_lock_id(key: str) -> int:
-    """Генерация ID от -2^31 до 2^31 - 1 от текстового ключа"""
+    """Generate ID from -2^31 to 2^31 - 1 from text key"""
     pos = crc32(key.encode("utf-8"))
     lock_id = (2 ** 31 - 1) & pos
     if pos & 2 ** 31:
